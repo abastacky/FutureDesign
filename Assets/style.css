@@ -1,0 +1,148 @@
+body{
+	background-color:white;
+	width: 100vw;
+	height: 100vh;
+	overflow:hidden;
+	margin:0;
+	/*mix-blend-mode:screen;*/
+}
+
+.whiteBG{
+	background-color:red;
+	background-size: cover;
+ 	position: relative;
+ 	height: 78vh;
+ 	z-index:-1;
+ 	transition: all 600ms ease;
+}
+
+.expanded{
+	background-color:red;
+	background-size: cover;
+ 	position: relative;
+ 	height: 100vh;
+ 	z-index:-1;
+ 	transition: all 600ms ease;
+
+}
+
+.invalid{
+	/*background-color:red;*/
+	width:50vw;
+	height:40vh;
+	position:relative;
+	margin-top:32vh;
+	margin-left:4vw;
+	font-family:helvetica;
+	font-weight:bold;
+/*	font-size: 85pt;*/
+	font-size:7vw;
+	color:blue;
+	line-height:110%;
+	mix-blend-mode: screen;
+	position:absolute;
+	cursor:default;
+}
+
+#valid{
+	display:none;
+/*	margin-top:20vh;
+	background-color:cyan;
+	color:blue;
+	width:50vw;
+	height:40vh;
+	mix-blend-mode: screen;
+	font-family:helvetica;
+	font-weight:bold;
+	font-size:7vw;
+	position:relative;*/
+	background-color: cyan;
+    color: black;
+    width: 50vw;
+    height: 30vh;
+    mix-blend-mode: screen;
+    font-family: helvetica;
+    font-weight: bold;
+    font-size: 7vw;
+    position: fixed;
+    margin-top: -50vh;
+    padding:2vw;
+    margin-left:2vw;
+    cursor:move;
+
+}
+
+.question{
+    z-index: 15;
+    width: 40vw;
+    height: 20vh;
+/*    background-color: blue;*/
+    position: fixed;
+    margin-left: 60vw;
+    margin-top: -60vh;
+}
+
+.question div{
+    background-color: magenta;
+    width: 16vw;
+    height: 6vh;
+    padding: 2vw;
+    margin: 4vw;
+    border-radius: 80px;
+    font-family:helvetica;
+	font-weight:bold;
+	color:white;
+	font-size: 3vw;
+	text-align:center;
+	cursor:pointer;
+
+}
+
+.typing{
+	width:50vw;
+	height:20vh;
+	font-family:helvetica;
+	font-weight:bold;
+	font-size: 5vw;
+	color:magenta;
+	padding-left:4vw;
+	cursor:auto;
+	-webkit-animation:colorchange 10s infinite alternate;
+}
+
+ @-webkit-keyframes colorchange {
+      0% {
+        
+        color: magenta;
+      }
+      100%{
+      	color:red;
+      }
+  }
+
+
+.onlyifyouwant{
+	display:none;
+	width:56vw;
+	height:10vh;
+	background-color:blue;
+	z-index:15;
+	margin-top:-30vh;
+	transition: all 600ms ease;
+}
+
+h1{
+/*	width:10vh;
+	height:30vw;*/
+	font-family:helvetica;
+	font-weight:bold;
+	font-size: 5vw;
+	color:black;
+}
+
+.typed-cursor{
+	color:magenta;
+	font-weight:lighter;
+	-webkit-animation:colorchange 10s infinite alternate;
+}
+
